@@ -36,6 +36,9 @@ gem 'will_paginate', '~> 3.0.5'
 # Build simple forms for Rails 3+
 gem 'simple_form'
 
+# Add authentication to site
+gem 'devise', '>=3.2.4'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
