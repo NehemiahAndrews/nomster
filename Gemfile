@@ -45,6 +45,12 @@ gem 'geocoder'
 # Add values to ENV on server
 gem 'figaro', '>= 1.0.0'
 
+# Add image upload with Carrierwave
+gem 'carrierwave'
+
+# Add Amazon S3 Integration with Fog
+gem 'fog', '~> 1.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
