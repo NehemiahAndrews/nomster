@@ -10,7 +10,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 
 # Use Sass Bootstrap
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '~> 3.3.4.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
