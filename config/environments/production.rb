@@ -12,7 +12,7 @@ Nomster::Application.configure do
   }
   ActionMailer::Base.delivery_method = :smtp
 
-  config.action_mailer.default_url_options = { :host => 'nomster-nehemiah-andrews.herokuapp.com'}
+  config.action_mailer.default_url_options = { :host => 'nomster-nehemiah.herokuapp.com'}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
