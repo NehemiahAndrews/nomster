@@ -12,7 +12,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_response :success
    end
 
-  test "quote show page, not found" do
+  test "user show page, not found" do
     get :show, :id => 'OMG'
     assert_response :not_found
   end
