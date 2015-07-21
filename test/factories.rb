@@ -5,7 +5,7 @@ FactoryGirl.define do
   end
 
   factory :user do
-    email "nehemiah.andrews@gmail.com"
+    email "nehemiah.andrews3@gmail.com"
     password "12345!!!54321"
     password_confirmation "12345!!!54321"
   end
@@ -16,6 +16,7 @@ FactoryGirl.define do
     address "23127 Violet St, Farmington, MI 48336"
     latitude "42.461418"
     longitude "-83.355656"
+    association :user
   end
 
 end

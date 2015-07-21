@@ -5,14 +5,13 @@ class CommentsControllerTest < ActionController::TestCase
     user = FactoryGirl.create(:user)
     sign_in user
 
-    place = FactoryGirl.create(:place)
+    place = FactoryGirl.create(:place, :user => user)
     
     assert_difference 'Comment.count' do
       post :create, :place_id => place.id, :comment => {
         :message => 'Awesome',
         :rating => '5_stars'
-      }
-    
+      }    
     end
 
     assert_redirected_to place_path(place)
