@@ -3,10 +3,10 @@
     <%= image_tag 'user.png' %>
   </div>
   <div class="col-xs-8">
-    <h2><%= @user.email %></h1>
-    <h3>Member since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
-    <h4><%= @user.comments.count %> total comments</h4>
-    <h4><%= @user.comments.where(:rating => '5_stars').count %> total 5 star reviews</h4>
+    <h2><%= selected_user.email %></h1>
+    <h3>Member since: <%= selected_user.created_at.strftime("%B %d, %Y") %></h3>
+    <h4><%= selected_user.comments.count %> total comments</h4>
+    <h4><%= selected_user.comments.where(:rating => '5_stars').count %> total 5 star reviews</h4>
   </div>
   <div class="clear"></div>
 </div>  
@@ -14,7 +14,7 @@
 <br /><br />
 <h1 class="text-center">My Comments</h1>
 <br /><br />
-<% @user.comments.each do |comment| %>
+<% selected_user.comments.each do |comment| %>
 
   <div class="col-xs-12 col-sm-6">
     <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
@@ -34,7 +34,7 @@
 <h2 class="text-center">My Places</h2>
 <br /><br />
 
-<% @user.places.each do |place| %>
+<% selected_user.places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
     <i><%= place.address %></i><br /><br />
