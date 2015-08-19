@@ -54,6 +54,9 @@ gem 'fog', '~> 1.3.1'
 # Add Factory Girl for testing
 gem 'factory_girl_rails', '~> 4.0'
 
+# Add fancybox to make boxes fancy :)
+gem 'fancybox-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

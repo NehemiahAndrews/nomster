@@ -34,7 +34,7 @@
 	<p>
      
 		<% selected_place.photos.each do |photo| %>           
-          <a href=<%= photo.picture %> class="img-thumbnail">
+          <a class="fancybox" href=<%= photo.picture %> class="img-thumbnail">
             <p><%= photo.caption %></p> 
             <img src=<%= photo.picture %> alt="" style="width:150px;height:150px">
           </a>
@@ -133,3 +133,4 @@
 		</blockquote>
 	</div>
 <% end %>
+
